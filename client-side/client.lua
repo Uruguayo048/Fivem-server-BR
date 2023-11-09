@@ -49,7 +49,7 @@ AddEventHandler("Multiverse:ChangeCoords", function(x, y, z)
     SetEntityCoords(GetPlayerPed(-1), x, y, z, false, false, false, false);
 end)
 
-RegisterCommand("joinbr", function(source, args, rawCommand)
+RegisterCommand("entrarbr", function(source, args, rawCommand)
     local src = source;
 	if not started then
 		event = true
