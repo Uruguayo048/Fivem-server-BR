@@ -54,9 +54,9 @@ RegisterCommand("joinbr", function(source, args, rawCommand)
 	if not started then
 		event = true
     	TriggerServerEvent('Multiverse:ChangeWorld', 1);
-		TriggerEvent("Notify","verde","Você entrou para o evento, aguarde ele começar",15000)
+		TriggerEvent("Notify","verde","Você entrou para o evento, aguarde ele começar",300)
 	else
-		TriggerEvent("Notify","vermelho","Evento já iniciado, quem sabe da próxima",15000)
+		TriggerEvent("Notify","vermelho","Evento já iniciado, quem sabe da próxima",3000)
 	end
 end)
 
