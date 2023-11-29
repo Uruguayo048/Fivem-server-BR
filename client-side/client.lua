@@ -38,7 +38,7 @@ function domainYRP.startDomain()
 		if distance <= radius then
 			--TriggerEvent("Notify","aviso","Área reduzida.",60000)
 		end
-		TriggerEvent("Notify","verde","Evento iniciado, boa sorte a todos.",15000)
+		TriggerEvent("Notify","verde","Evento iniciado, boa sorte a todos.",7500)
 	else
 		TriggerEvent("Notify","vermelho","Você não está participando do evento, as regras de RDM aplicam a você",5000)
 	end
@@ -56,7 +56,7 @@ RegisterCommand("entrarbr", function(source, args, rawCommand)
     	TriggerServerEvent('Multiverse:ChangeWorld', 1);
 		TriggerEvent("Notify","verde","Você entrou para o evento, aguarde ele começar",300)
 	else
-		TriggerEvent("Notify","vermelho","Evento já iniciado, quem sabe da próxima",3000)
+		TriggerEvent("Notify","vermelho","Evento já iniciado, quem sabe da próxima",5000)
 	end
 end)
 
