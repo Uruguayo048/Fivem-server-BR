@@ -36,9 +36,9 @@ function domainYRP.startDomain()
 		local coordsPed = GetEntityCoords(ped)
 		local distance = #(coordsPed - vector3(coords[1],coords[2],coords[3]))
 		if distance <= radius then
-			--TriggerEvent("Notify","aviso","Área reduzida.",5000)
+			--TriggerEvent("Notify","aviso","Área reduzida.",120)
 		end
-		TriggerEvent("Notify","verde","Evento iniciado, boa sorte a todos.",7500)
+		TriggerEvent("Notify","verde","Evento iniciado, boa sorte a todos.",300)
 	else
 		TriggerEvent("Notify","vermelho","Você não está participando do evento, as regras de RDM aplicam a você",5000)
 	end
@@ -54,7 +54,7 @@ RegisterCommand("entrarbr", function(source, args, rawCommand)
 	if not started then
 		event = true
     	TriggerServerEvent('Multiverse:ChangeWorld', 1);
-		TriggerEvent("Notify","verde","Você entrou para o evento, aguarde ele começar",300)
+		TriggerEvent("Notify","verde","Você entrou para o evento, aguarde ele começar",3000)
 	else
 		TriggerEvent("Notify","vermelho","Evento já iniciado, quem sabe da próxima",5000)
 	end
