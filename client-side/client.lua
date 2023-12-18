@@ -36,7 +36,7 @@ function domainYRP.startDomain()
 		local coordsPed = GetEntityCoords(ped)
 		local distance = #(coordsPed - vector3(coords[1],coords[2],coords[3]))
 		if distance <= radius then
-			--TriggerEvent("Notify","aviso","Área reduzida.",60000)
+			--TriggerEvent("Notify","aviso","Área reduzida.",5000)
 		end
 		TriggerEvent("Notify","verde","Evento iniciado, boa sorte a todos.",7500)
 	else
